@@ -7,6 +7,17 @@
     <title>EX3 mod2</title>
 </head>
 <body>
-    
+        <ul></ul>
+
+        <script>
+          var nomes = ['Joao', 'Isa', 'Gabi'];
+          var listElement = document.querySelector('ul');
+          for (nome of nomes) {
+            var liElement = document.createElement('li');
+            var textElement = document.createTextNode(nome);
+            liElement.appendChild(textElement);
+            listElement.appendChild(liElement);
+          }
+        </script>
 </body>
 </html>
