@@ -6,19 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EX3</title>
 </head>
-<body>
-        <ul></ul>
 
-        <script>
-          var nomes = ['João', 'Isa', 'Gabi'];
-          var listElement = document.querySelector('ul');
-          for (nome of nomes) {
-            var liElement = document.createElement('li');
-            var textElement = document.createTextNode(nome);
-            liElement.appendChild(textElement);
-            listElement.appendChild(liElement);
-          }
-        </script>
+<body>
+  <script>
+    function temHabilidade(skills) {
+      return skills.indexOf("Javascript") !== -1;
+    }
     
+    var skills = ["Javascript", "ReactJS", "React Native"];
+    console.log(temHabilidade(skills));
+  </script>
 </body>
 </html>
